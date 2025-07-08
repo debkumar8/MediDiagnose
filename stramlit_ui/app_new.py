@@ -3,8 +3,7 @@ import requests
 
 st.title("🩺 AI Medical Diagnostics Assistant")
 
-symptom_input = st.text_area("Describe your symptoms") # what ever text we written here, it will  go the below button and will hit the url
-
+symptom_input = st.text_area("Describe your symptoms") 
 if st.button("Get Diagnosis"):
     state_input = {
         "input": symptom_input,
